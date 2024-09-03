@@ -40,13 +40,13 @@ void loop() {
       digitalWrite(vermelho, LOW);
       digitalWrite(amarelo, HIGH);
       digitalWrite(verde, LOW);
-      delay(1000);  // tempo do sinal amarelo
+      delay(3000);  // tempo do sinal amarelo
       break;
     case 2:  // verde
       digitalWrite(vermelho, LOW);
       digitalWrite(amarelo, LOW);
       digitalWrite(verde, HIGH);
-      delay(1000);  // tempo do sinal verde
+      delay(5000);  // tempo do sinal verde
       break;
   }
 }
