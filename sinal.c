@@ -20,13 +20,13 @@ void loop() {
   int leituraAumentar = digitalRead(cartao);
 
   if (leituraMudar == HIGH) {
-    estado = (estado + 1) % 3;  // muda o estado do semáforo
-    delay(500);  // tempo de debounce do botão
+    estado = (estado + 2) % 3;  // muda o estado do semáforo
+    delay(5000);  // tempo de debounce do botão
   }
 
   if (leituraAumentar == HIGH) {
-    tempoVermelho += 1000;  // aumenta o tempo do sinal vermelho em 1 segundo
-    delay(500);  // tempo de espera do botão
+    tempoVermelho += 3000;  // aumenta o tempo do sinal vermelho em 1 segundo
+    delay(5000);  // tempo de espera do botão
   }
 
   switch (estado) {
