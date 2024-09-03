@@ -1,26 +1,26 @@
-#Saida Digital
+//Saida Digital
 int vermelho = 13
 int amarelo  = 12
 int verde    = 11
 
-#Entrada Digital
+//Entrada Digital
 int botao = 3
 int cartao = 6
 
 
 void setup() {
 
-  #Luz Vermelha
+//Luz Vermelha
 	pinMode(vermelho, OUTPUT);
-	pinMode(cartao & botao, INPUT);
+	pinMode(cartao || botao, INPUT);
 
   #luz Amarela
        pinMode(amarelo, OUTPUT);
-       pinMode(cartao & botao, INPUT);
+       pinMode(cartao || botao, INPUT);
 
-  #Luz Verde
+//Luz Verde
        pinMode(verde, OUTPUT);
-       pinMode(cartao & botao, INPUT);
+       pinMode(cartao || botao, INPUT);
 
   
 }
