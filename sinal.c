@@ -16,15 +16,15 @@ void setup() {
 }
 
 void loop() {
-  int leituraMudar = digitalRead(botao);
-  int leituraAumentar = digitalRead(cartao);
+  int leituraBotao = digitalRead(botao);
+  int leituraCartao = digitalRead(cartao);
 
-  if (leituraMudar == HIGH) {
+  if (leituraBotao == HIGH) {
     estado = (estado + 2) % 3;  // muda o estado do semáforo
     delay(5000);  // tempo de debounce do botão
   }
 
-  if (leituraAumentar == HIGH) {
+  if (leituraCartao == HIGH) {
     tempoVermelho += 3000;  // aumenta o tempo do sinal vermelho em 1 segundo
     delay(5000);  // tempo de espera do botão
   }
